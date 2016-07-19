@@ -1,0 +1,130 @@
+		[class|=cal]{
+			padding:0;
+			margin:0;
+			box-sizing:border-box;
+		}
+		.cal-controller{
+			position:relative;
+		}
+		.cal-get-date{
+			height:40px;
+		}
+		/*包含框*/
+		.cal-month-box{
+			display:none;
+			position:absolute;
+			top:40px;
+			left:0;
+			overflow:hidden;
+			width:443px;
+			height:255px;
+			font-size:12px;
+			background:#fff;
+			border:1px solid #ccc;
+		}
+		.cal-date-header{ height:80px; }
+		/*上下月按钮*/
+		.cal-mon-controller{ 
+			z-index:100;
+			position:relative;
+			overflow:hidden;
+			margin:5px;
+		}
+		.cal-last,.cal-next{
+			width:20px;
+			height:20px;
+			outline:none;
+			
+			line-height:20px;
+			font-size:16px;
+			font-weight:bold;
+			color:#d37;
+			text-align:center;
+			border:none;
+			background:#fff;
+			cursor:pointer;
+		}
+		.cal-last{ float:left; }
+		.cal-next{ float:right; }
+		.cal-last:hover,.cal-next:hover{
+			border-color:#aaa;
+		}
+		/*星期条*/
+		.cal-week-bar{ 
+			display:inline-block;
+			margin:5px;
+			height:40px;
+			list-style:none;
+		}
+		.cal-week-bar li{
+			display:inline-block;
+			width:30px;
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			background:#eee;
+		}
+		.cal-color-red{ color:#d37; }
+		/*移动框*/
+		.cal-date-current{
+			position:absolute;
+			left:0;
+			top:0px;
+			width:900px;
+			overflow:hidden;
+		}
+		/*日期条*/
+		.cal-date-bar{
+			display:inline-block;
+			width:100%;
+			height:30px;
+			line-height:30px;
+			font-size:14px;
+			color:#fff;
+			
+			text-align:center;
+			background:#d37;
+		}
+		.cal-year,.cal-month{
+			display:inline-block;
+			width:40px;
+			height:40px;
+		}
+		.cal-box{
+			float:left;
+			overflow:hidden;
+		}
+		.cal-border-right{ 
+			position:absolute;
+			top:30px;
+			left:219px;
+			width:1px;
+			height:224px;
+			border-right:1px solid #ccc;
+		}
+		/*table*/
+		.cal-day-lists{
+			margin:40px 5px 0;
+			border-collapse:collapse;
+			text-align:center;
+		}
+		/*日*/
+		.cal-day-lists td{
+			padding:0;
+			width:30px;
+			height:30px;
+		}
+		.cal-day{ color:#ddd; }
+		
+		.cal-active{
+			color:#333;
+			cursor:pointer;
+		}
+		.cal-active:hover{ 
+			color:#fff;
+			background:#f7b;
+		}
+		.cal-checked{
+			color:#fff;
+			background:#d37;
+		}
